@@ -1,0 +1,10 @@
+version: '3.7'
+
+services: 
+    app: 
+        build: .
+        container_name: nodeapi
+        ports:
+            - 8192:8192
+        volumes:
+            - .:/usr/app
